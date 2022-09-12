@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="tema" sid="292067394599152" static="0" type="number">0</variable>
+        <variable constant="0" name="alvie" sid="148713818681022" static="0" type="number">0</variable>
+        <event-group description="" sid="137657143011572" title="Menu">
+            <sub-events>
+                <event-block any="1" sid="916349293487737">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="954897613414262" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Slot</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="688113655851107" type="Touch">
+                            <param id="0" name="Object">Slot</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="100622617969846" type="Selector">
+                            <param id="0" name="Object">Slot</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="235290390343729" type="Selector">
+                            <param id="0" name="Instance variable">Selectorpos</param>
+                            <param id="1" name="Value">Slot.IID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="350746886268603" title="Criação de Objetos">
+            <sub-events>
+                <event-block sid="858450702880726">
+                    <conditions>
+                        <condition id="2" name="Is in touch" sid="841396353570469" type="TouchWrap" />
+                        <condition id="-7" name="Compare instance variable" sid="238027220244150" type="Selector">
+                            <param id="0" name="Instance variable">Selectorpos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="964895779574592" type="TouchWrap">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="367788979561443" type="TouchWrap">
+                            <param id="0" name="Object">Objetos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="548077483332172" type="System">
+                            <param id="0" name="Object to create">smb_floor</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">floor(Mouse.X/32)*32+16</param>
+                            <param id="3" name="Y">floor(Mouse.Y/32)*32+16</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="348371841891320">
+                    <conditions>
+                        <condition id="2" name="Is in touch" sid="599215820623336" type="TouchWrap" />
+                        <condition id="-7" name="Compare instance variable" sid="371284308037164" type="Selector">
+                            <param id="0" name="Instance variable">Selectorpos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="292882447060541" type="TouchWrap">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="358557877470650" type="TouchWrap">
+                            <param id="0" name="Object">Objetos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="539766674632925" type="System">
+                            <param id="0" name="Object to create">smb_question</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">floor(Mouse.X/32)*32+16</param>
+                            <param id="3" name="Y">floor(Mouse.Y/32)*32+16</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="507118979137653">
+                    <conditions>
+                        <condition id="2" name="Is in touch" sid="352269197475654" type="TouchWrap" />
+                        <condition id="-7" name="Compare instance variable" sid="730340845775292" type="Selector">
+                            <param id="0" name="Instance variable">Selectorpos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                        <condition id="4" name="Is touching object" sid="457559177640908" type="TouchWrap">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                        <condition id="4" inverted="1" name="Is touching object" sid="558393099791113" type="TouchWrap">
+                            <param id="0" name="Object">Objetos</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="945625855924998" type="System">
+                            <param id="0" name="Object to create">smb_lava</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">floor(Mouse.X/32)*32+16</param>
+                            <param id="3" name="Y">floor(Mouse.Y/32)*32+16</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="797400883934710">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="535987181758014" type="smb_question">
+                    <param id="0" name="Object">Slot</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="206473443809988" type="smb_question">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="117794278798707">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="576798209661028" type="mario">
+                    <param id="0" name="Object">smb_lava</param>
+                </condition>
+                <condition id="0" name="On collision with another object" sid="980694857615330" type="mario">
+                    <param id="0" name="Object">deathbitch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="282175912651835" type="System">
+                    <param id="0" name="Variable">alvie</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="330797160348696">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="889341178861974" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="448235560788717" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="867481819566029" type="smb_floor">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Solid" id="0" name="Set enabled" sid="531969310799566" type="smb_question">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="554019832670296">
+            <conditions>
+                <condition id="-20" inverted="1" name="Is on mobile device" sid="311282819089137" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="997195426618157" type="Mobila" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="357138942345307" title="mobilia">
+            <sub-events>
+                <event-block sid="948366538332730">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="716502808299350" type="Touch">
+                            <param id="0" name="Object">botãoa</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="784155051753799" type="botãoa">
+                            <param id="0" name="Animation">&quot;Pressed&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="304061903813983" type="mario">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="262325761493318">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="189414093894352" type="Touch">
+                            <param id="0" name="Object">lefttrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="143230389485111" type="mario">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="499625461019970">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="850253464561415" type="Touch">
+                            <param id="0" name="Object">righttrigger</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="764068027630113" type="mario">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="181126329041105">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="579325997125266" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="450147615745640" type="botãoa">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="239436619718666" title="Edit/Play">
+            <sub-events>
+                <event-block sid="178219129849486">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="532021053904490" type="Touch">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="970594238141174" type="Sprite2">
+                            <param id="0" name="Animation">&quot;Edit&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="157751993326481" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="720475352538455" type="System">
+                            <param id="0" name="Variable">alvie</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="184351144923049" type="System">
+                            <param id="0" name="Group name">&quot;Criação de Objetos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="135388172706387" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="347829959055871" type="smb_floor">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="365240579039312" type="smb_question">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="390373169850918">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="119598270095977" type="Touch">
+                            <param id="0" name="Object">Sprite2</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="112324253623187" type="Sprite2">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="412454333406959" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="256315270679667" type="System">
+                            <param id="0" name="Variable">alvie</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="542444246118956" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="316941060834002">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="525854446686851" type="System">
+                            <param id="0" name="Variable">alvie</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="602852170165403" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="403718658657497" type="System">
+                            <param id="0" name="Group name">&quot;Criação de Objetos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="211993572018135" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="585237452897524" type="mario">
+                            <param id="0" name="X">160</param>
+                            <param id="1" name="Y">272</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="211383635265954" type="mario">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="744576603258491" type="mario">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="228428698214432" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="919635615584223" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="416416667552480" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="302251127970110" type="TiledBackground">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="786366594062490" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="679731763509188" type="Sprite2">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="284250454291118">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="951602707766901" type="System">
+                            <param id="0" name="Variable">alvie</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="566560638541029" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="595519029582704" type="System">
+                            <param id="0" name="Group name">&quot;Criação de Objetos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="636147659553810" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="755571528145242" type="mario">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Platform" id="11" name="Set enabled" sid="982529884007364" type="mario">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="977767230974843" type="TiledBackground">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="866585431804320" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="512298299321754" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="436358817801885" type="smb_floor">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action behavior="Solid" id="0" name="Set enabled" sid="493346374428178" type="smb_question">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="838638125197169" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="645115523675356" type="Sprite2">
+                            <param id="0" name="Animation">&quot;Edit&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="732053088319215" title="mairo arrastante">
+            <sub-events>
+                <event-block sid="334084821358487">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" name="Is dragging" sid="455073792279815" type="mario" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="811856488122537" type="System">
+                            <param id="0" name="Group name">&quot;Criação de Objetos&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="775734953938367">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" inverted="1" name="Is dragging" sid="364101032074145" type="mario" />
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="453959775065647" type="System">
+                            <param id="0" name="Group name">&quot;Criação de Objetos&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="363929669436034" title="Diferenciar GUI e Espaço">
+            <sub-events>
+                <event-block sid="181880151941058">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="615552039045146" type="Button" />
+                        <condition id="1" name="Is overlapping another object" sid="382806452375674" type="Objetos">
+                            <param id="0" name="Object">TiledBackground</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="439246079071467" type="Objetos" />
+                    </actions>
+                </event-block>
+                <event-block sid="991431756986364">
+                    <conditions>
+                        <condition id="2" name="Mouse button is down" sid="754253927068595" type="Mouse">
+                            <param id="0" name="Mouse button">2</param>
+                        </condition>
+                        <condition id="7" name="Cursor is over object" sid="144167426398294" type="Mouse">
+                            <param id="0" name="Object">Objetos</param>
+                        </condition>
+                        <condition id="1" inverted="1" name="Is overlapping another object" sid="198037207663760" type="Objetos">
+                            <param id="0" name="Object">Slot</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="892078566028625" type="Objetos" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="556352493097378" title="Trocar de Tema">
+            <sub-events>
+                <event-block sid="628567942504078">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="208638864828096" type="TouchWrap">
+                            <param id="0" name="Object">theme_toggle</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="306356155548562" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="666054514607392" type="theme_toggle">
+                            <param id="0" name="Animation">&quot;Switch&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="821525446025302" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="958297931128451" type="theme_toggle">
+                            <param id="0" name="Animation">&quot;NSMBU&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="156273325073597" type="System">
+                            <param id="0" name="Variable">tema</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="197682326375122">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="570315696641173" type="TouchWrap">
+                            <param id="0" name="Object">theme_toggle</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="156423390594076" type="theme_toggle">
+                            <param id="0" name="Animation">&quot;NSMBU&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="533256103522117" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="723168605053355" type="theme_toggle">
+                            <param id="0" name="Animation">&quot;SwitchBack&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="868341053659346" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="901797819826489" type="theme_toggle">
+                            <param id="0" name="Animation">&quot;Default&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-11" name="Subtract from" sid="509538873317073" type="System">
+                            <param id="0" name="Variable">tema</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="406750324318688" title="sistema de salvação de nivel">
+            <sub-events>
+                <event-block sid="113195388905269">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="336119499220903" type="TouchWrap">
+                            <param id="0" name="Object">botãosla</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-36" name="Save" sid="228127293760704" type="System">
+                            <param id="0" name="Slot">&quot;fase&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="602129925834093">
+                    <conditions>
+                        <condition id="-28" name="On save complete" sid="392506098962239" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="20" name="Invoke download of string" sid="701943155947557" type="Browser">
+                            <param id="0" name="String">SaveStateJSON</param>
+                            <param id="1" name="MIME type">&quot;aplication/json&quot;</param>
+                            <param id="2" name="Filename">&quot;fasedosmum.smu&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="961294714951597">
+                    <conditions>
+                        <condition id="0" name="On changed" sid="459392527561839" type="FileChooser" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Request URL" sid="425451927885505" type="AJAX">
+                            <param id="0" name="Tag">&quot;fase&quot;</param>
+                            <param id="1" name="URL">FileChooser.FileURLAt(0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="173727107701970">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="769286795702381" type="AJAX">
+                            <param id="0" name="Tag">&quot;fase&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-38" name="Load from JSON" sid="310888351379006" type="System">
+                            <param id="0" name="JSON">AJAX.LastData</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="191662630936848" title="nsmbu_tema">
+            <sub-events>
+                <event-block sid="759767029577144">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="317320643667639" type="System">
+                            <param id="0" name="Variable">tema</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="238201159215180" type="smb_floor">
+                            <param id="0" name="Animation">&quot;nsmbu_top&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="706441308286669" type="smb_question">
+                            <param id="0" name="Animation">&quot;Default_nsmbu&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

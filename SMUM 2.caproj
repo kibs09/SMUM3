@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>SMUM 2</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1ty8u22y6ty3l</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Scirra" id="filechooser" version="1">File chooser</plugin>
+        <plugin author="Rex.Rainbow" id="rex_TouchWrap" version="0.100000001">Touch wrap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="NoSave" version="1">No Save</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>864</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Objetos">
+            <object-type name="smb_floor" sid="974343534647480">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="189098947759908">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="131538391536394" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Downloads\52571.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="nsmbu_top" pingpong="0" repeatcount="1" repeatto="0" sid="517131233499576" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5625" original-source="C:\Users\KFCaio\Downloads\IMG_20220906_185236.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="nmsbu_mid" pingpong="0" repeatcount="1" repeatto="0" sid="474814500561974" speed="5">
+                        <frame duration="1" hotspotX="0.515625" hotspotY="0.5625" original-source="C:\Users\KFCaio\Downloads\IMG_20220906_185236.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="smb_lava" sid="379100235140949">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="LineOfSight" sid="171673078969505">
+                        <behavior id="LOS" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="572643597452442" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Downloads\52571.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="ver" pingpong="0" repeatcount="1" repeatto="0" sid="118938067495846" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="smb_question" sid="131255027367378">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="642722027264787">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="134754137776802" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Downloads\52571.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Documents\fsad.png" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="302968047489802" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kibei\Documents\fsad.png" />
+                    </animation>
+                    <animation framecount="1" loop="0" name="Default_nsmbu" pingpong="0" repeatcount="1" repeatto="0" sid="169520660956685" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\KFCaio\Downloads\IMG_20220906_185236.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Debug">
+            <object-type name="Button2" sid="286804463576525">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Button" sid="263798827160114">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
+        <object-type name="Mselector" sid="519524976543140">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638979316506015" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kibei\Downloads\skeopfsa.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Slot" sid="266662199083500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="535151408940497" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kibei\Documents\slot.png">
+                        <collision-poly>
+                            <point x="0.0547945" y="0.05" />
+                            <point x="0.493151" y="0.025" />
+                            <point x="0.958904" y="0.0375" />
+                            <point x="0.986301" y="0.5" />
+                            <point x="0.90411" y="0.9125" />
+                            <point x="0.0958904" y="0.9125" />
+                            <point x="0.0273973" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Selector" sid="962844201341965">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Selectorpos" sid="816135081568348" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="213993979229038" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\kibei\Documents\selected.png">
+                        <collision-poly>
+                            <point x="0.0410959" y="0.0375" />
+                            <point x="0.493151" y="0.025" />
+                            <point x="0.958904" y="0.0375" />
+                            <point x="0.986301" y="0.5" />
+                            <point x="0.931507" y="0.9375" />
+                            <point x="0.0821918" y="0.925" />
+                            <point x="0.0136986" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="444525424508547">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="TiledBackground" sid="657463598334548">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\kibei\Downloads\skeopfsa.png" />
+        </object-type>
+        <object-type name="Touch" sid="990954863144812">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="mario" sid="230458270916356">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="815685363233820">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="195059322627864">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="994925209793806">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="129984525651230">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="NoSave" sid="409413819258967">
+                    <behavior id="NoSave" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="777609728674064" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Downloads\NES - Super Mario Bros - Mario &amp; Luigi.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0.148438" />
+                            <point x="0.635417" y="0.148438" />
+                            <point x="0.65625" y="1" />
+                            <point x="0.328125" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="6" loop="0" name="nsmbu_idle" pingpong="0" repeatcount="1" repeatto="0" sid="930853558747992" speed="5">
+                    <frame duration="1" hotspotX="0.452381" hotspotY="0.639344" original-source="C:\Users\kibei\Desktop\SMM2 sprites v3.9\New Super Mario Bros U\small mario.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.196721" />
+                            <point x="1" y="0.344262" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.387755" hotspotY="0.65">
+                        <collision-poly>
+                            <point x="0" y="0.383333" />
+                            <point x="1" y="0.533333" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.591837" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.422222" hotspotY="0.661017">
+                        <collision-poly>
+                            <point x="0" y="0.271186" />
+                            <point x="1" y="0.423729" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.463415" hotspotY="0.672414">
+                        <collision-poly>
+                            <point x="0.243902" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.0731707" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.463415" hotspotY="0.672414">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.512195" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.38" hotspotY="0.661017">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="487722732652022" speed="5">
+                    <frame duration="1" hotspotX="17" hotspotY="13.125" original-source="C:\Users\KFCaio\Downloads\50365.png" />
+                    <frame duration="1" hotspotX="15.875" hotspotY="13.125" />
+                    <frame duration="1" hotspotX="14.75" hotspotY="13.125" />
+                </animation>
+                <animation framecount="1" loop="0" name="Jump" pingpong="0" repeatcount="1" repeatto="0" sid="910410182194422" speed="5">
+                    <frame duration="1" hotspotX="12.25" hotspotY="13.125" original-source="C:\Users\KFCaio\Downloads\50365.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="304590590730547">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="829390167318671">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="317964906826059" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.510638" original-source="C:\Users\kibei\Downloads\play.png">
+                        <collision-poly>
+                            <point x="0.0769231" y="0.0940171" />
+                            <point x="0.496504" y="0.0512821" />
+                            <point x="0.93007" y="0.0854701" />
+                            <point x="0.916084" y="0.495726" />
+                            <point x="0.972028" y="0.965812" />
+                            <point x="0.0629371" y="0.923077" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Edit" pingpong="0" repeatcount="1" repeatto="0" sid="806607459456183" speed="5">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.510638" original-source="C:\Users\kibei\Downloads\edit.png">
+                        <collision-poly>
+                            <point x="0.0238499" y="0.029128" />
+                            <point x="0.5" y="0.029128" />
+                            <point x="0.914043" y="0.107607" />
+                            <point x="0.893342" y="0.5" />
+                            <point x="0.941647" y="0.927273" />
+                            <point x="0.5" y="0.901113" />
+                            <point x="0.072155" y="0.909833" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="deathbitch" sid="467913464475977">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="550224638534466" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="570140614189496">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="280358301425068" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Documents\gui.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sidesbar" sid="912085557209430">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860927125168031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Documents\sidebar.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="660005889626278">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="750389587802405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Desktop\smm e3 sprites\touch_cruz-sheet0.png">
+                        <collision-poly>
+                            <point x="0.354167" y="0.354167" />
+                            <point x="0.5" y="0.00520833" />
+                            <point x="0.645833" y="0.354167" />
+                            <point x="0.994792" y="0.5" />
+                            <point x="0.645833" y="0.645833" />
+                            <point x="0.5" y="0.994792" />
+                            <point x="0.359375" y="0.640625" />
+                            <point x="0.00520833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botãoa" sid="454168148625398">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="922767030216876" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Desktop\smm e3 sprites\two_buttom-sheet0.png">
+                        <collision-poly>
+                            <point x="0.151042" y="0.151042" />
+                            <point x="0.5" y="0.00520833" />
+                            <point x="0.848958" y="0.151042" />
+                            <point x="0.994792" y="0.5" />
+                            <point x="0.848958" y="0.848958" />
+                            <point x="0.5" y="0.994792" />
+                            <point x="0.151042" y="0.848958" />
+                            <point x="0.00520833" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Pressed" pingpong="0" repeatcount="1" repeatto="0" sid="191410987895256" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\kibei\Desktop\smm e3 sprites\two_buttom-sheet1.png">
+                        <collision-poly>
+                            <point x="0.145833" y="0.145833" />
+                            <point x="0.5" y="0" />
+                            <point x="0.854167" y="0.145833" />
+                            <point x="1" y="0.5" />
+                            <point x="0.854167" y="0.854167" />
+                            <point x="0.5" y="1" />
+                            <point x="0.145833" y="0.854167" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="righttrigger" sid="180323996211084">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="662289514458842" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lefttrigger" sid="192061632317937">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="167744859972665" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="theme_toggle" sid="879186326555812">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="704361325983290" speed="5">
+                    <frame duration="1" hotspotX="0.481283" hotspotY="0.523404" original-source="C:\Users\kibei\Desktop\smm e3 sprites\change-sheet0.png">
+                        <collision-poly>
+                            <point x="0.160428" y="0.106383" />
+                            <point x="1" y="0.00425532" />
+                            <point x="1" y="0.255319" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0.923404" />
+                            <point x="0.139037" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="Switch" pingpong="0" repeatcount="1" repeatto="0" sid="943787751824642" speed="5">
+                    <frame duration="1" hotspotX="0.457447" hotspotY="0.583026" original-source="C:\Users\kibei\Desktop\smm e3 sprites\change-sheet0.png">
+                        <collision-poly>
+                            <point x="0" y="0.110701" />
+                            <point x="0" y="0.0221402" />
+                            <point x="0.962766" y="0.239852" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.12766" y="0.819188" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.494792" hotspotY="0.570397">
+                        <collision-poly>
+                            <point x="0.15625" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.772563" />
+                            <point x="1" y="0.444043" />
+                            <point x="1" y="0.382671" />
+                            <point x="1" y="0" />
+                            <point x="0.135417" y="0.772563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.468421" hotspotY="0.534783">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.642105" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.189474" y="0.93913" />
+                            <point x="0.163158" y="0.543478" />
+                            <point x="0.642105" y="0.469565" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0.93913" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="SwitchBack" pingpong="0" repeatcount="1" repeatto="0" sid="996207115418190" speed="5">
+                    <frame duration="1" hotspotX="0.468421" hotspotY="0.534783">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.642105" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.189474" y="0.93913" />
+                            <point x="0.163158" y="0.543478" />
+                            <point x="0.642105" y="0.469565" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0.93913" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.494792" hotspotY="0.570397">
+                        <collision-poly>
+                            <point x="0.15625" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.772563" />
+                            <point x="1" y="0.444043" />
+                            <point x="1" y="0.382671" />
+                            <point x="1" y="0" />
+                            <point x="0.135417" y="0.772563" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.457447" hotspotY="0.583026">
+                        <collision-poly>
+                            <point x="0" y="0.110701" />
+                            <point x="0" y="0.0221402" />
+                            <point x="0.962766" y="0.239852" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.12766" y="0.819188" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="NSMBU" pingpong="0" repeatcount="1" repeatto="0" sid="346423983394551" speed="5">
+                    <frame duration="1" hotspotX="0.489362" hotspotY="0.537445" original-source="C:\Users\kibei\Desktop\smm e3 sprites\change-sheet0.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.632979" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.175532" y="0.938326" />
+                            <point x="0.148936" y="0.537445" />
+                            <point x="0.632979" y="0.462555" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0.938326" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LocalStorage" sid="566390115949449">
+            <plugin id="LocalStorage" />
+        </object-type>
+        <object-type name="AJAX" sid="567785110900202">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="botãosla" sid="342780251086036">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="847485618222244" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="812984271946407">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="TouchWrap" sid="379924334982966">
+            <plugin id="rex_TouchWrap" />
+        </object-type>
+        <object-type name="FileChooser" sid="787216314055927">
+            <plugin id="filechooser" />
+        </object-type>
+        <object-type name="nsmbu_mario" sid="427934380762457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="789694231170273">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="845937851835859">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="701949715670152">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="DragDrop" sid="392104871842496">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+                <behavior-type name="NoSave" sid="563280416335180">
+                    <behavior id="NoSave" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="nsmbu_idle" pingpong="0" repeatcount="1" repeatto="0" sid="341669729486839" speed="5">
+                    <frame duration="1" hotspotX="0.452381" hotspotY="0.639344" original-source="C:\Users\kibei\Desktop\SMM2 sprites v3.9\New Super Mario Bros U\small mario.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.196721" />
+                            <point x="1" y="0.344262" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.387755" hotspotY="0.65">
+                        <collision-poly>
+                            <point x="0" y="0.383333" />
+                            <point x="1" y="0.533333" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.591837" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.422222" hotspotY="0.661017">
+                        <collision-poly>
+                            <point x="0" y="0.271186" />
+                            <point x="1" y="0.423729" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.463415" hotspotY="0.672414">
+                        <collision-poly>
+                            <point x="0.243902" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.0731707" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.463415" hotspotY="0.672414">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0.512195" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.38" hotspotY="0.661017">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Objetos" plugin-id="Sprite" sid="883917645690129">
+            <members>
+                <member>smb_floor</member>
+                <member>smb_lava</member>
+                <member>smb_question</member>
+            </members>
+        </family>
+        <family name="Mobila" plugin-id="Sprite" sid="398458760999783">
+            <members>
+                <member>botãoa</member>
+                <member>Sprite4</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="9" />
+        <global-instance type="Touch" uid="12">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="27" />
+        <global-instance type="AJAX" uid="28" />
+        <global-instance type="Browser" uid="30" />
+        <global-instance type="TouchWrap" uid="19">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+                <enable>Yes</enable>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

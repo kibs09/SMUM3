@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Layout 1</layout>
+        <event-sheet active="1" order="1">Event sheet 1</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="Objetos" />
+        <family expanded="0" name="Mobila" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="object-folder/Objetos/" />
+        <folder expanded="0" path="object-folder/Debug/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/smb_floor/" />
+        <folder expanded="1" path="animation-folder/smb_lava/" />
+        <folder expanded="1" path="animation-folder/smb_question/" />
+        <folder expanded="1" path="animation-folder/Mselector/" />
+        <folder expanded="1" path="animation-folder/Slot/" />
+        <folder expanded="1" path="animation-folder/Selector/" />
+        <folder expanded="1" path="animation-folder/mario/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/deathbitch/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/sidesbar/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+        <folder expanded="1" path="animation-folder/botãoa/" />
+        <folder expanded="1" path="animation-folder/righttrigger/" />
+        <folder expanded="1" path="animation-folder/lefttrigger/" />
+        <folder expanded="1" path="animation-folder/theme_toggle/" />
+        <folder expanded="1" path="animation-folder/botãosla/" />
+        <folder expanded="1" path="animation-folder/nsmbu_mario/" />
+    </folders-expanded>
+</c2uistate>
